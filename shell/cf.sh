@@ -461,7 +461,7 @@ clear
 while true
 do
     echo -e "${purple}----------------------------------${rest}"
-    echo -e "${purple}|${blue}    creat = Github: @badafans     ${purple}|${rest}"
+    echo -e "${purple}|${blue}   creat = Github: @badafans    ${purple}|${rest}"
     echo -e "${purple}----------------------------------${rest}"
     echo -e "${purple}|${cyan}         ÐΛɌ₭ᑎΞ𐒡𐒡 | 𓄂𓆃          ${purple}|${rest}"
     echo -e "${purple}----------------------------------${rest}"
@@ -474,7 +474,7 @@ do
     echo -e "${purple}|${yellow}  7. | Clear the cache          ${purple}|${rest}"
     echo -e "${purple}|${yellow}  8. | Clear the cache          ${purple}|${rest}"
     echo -e "${purple}|${yellow}                                ${purple}|${rest}"
-    echo -e "${purple}|${red}  0. | EXIT                      ${purple}|${rest}"
+    echo -e "${purple}|${red}  0. | EXIT                     ${purple}|${rest}"
     echo -e "${purple}----------------------------------${rest}"
 	read -p "select a menu num(Default is 0): " menu
 	if [ -z "$menu" ]
