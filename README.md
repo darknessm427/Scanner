@@ -71,7 +71,7 @@ o) وب سایت هایی که خدمات دانلود فیلم، برنامه �
 در حال حاضر روی Termux، OpenWrt، Ubuntu، Debian، CentOS، MacOS، Raspbian، Armbian، iSH تست شده است.
 
 ```bash
-curl https://raw.githubusercontent.com/darknessm427/Scanner/master/shell/cis.sh -o cis.sh && chmod +x cis.sh && ./cis.sh
+curl https://raw.githubusercontent.com/darknessm427/Scanner/master/shell/cf.sh -o cf.sh && chmod +x cf.sh && ./cf.sh
 ```
 
 ## بیانیه مرجع
