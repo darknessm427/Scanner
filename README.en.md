@@ -22,7 +22,7 @@ f) Websites whose content has copyright risks (videos, novels, music, etc.).
 
 g) The website contains the sale of drugs and health care products, but does not obtain the necessary qualifications, or seriously exaggerates the facts about the effectiveness of the drugs.
 
-h) The main activity of the website is to provide services such as payment, transaction platform, guarantee and agency of foreign financial management (speculation, speculation, gold speculation) to illegal websites.
+ح) فعالیت اصلی وب سایت ارائه خدماتی از قبیل پرداخت، بستر معاملات، ضمانت و نمایندگی مدیریت مالی خارجی (سفته بازی، سفته بازی، سفته بازی طلا) به وب سایت های غیرقانونی می باشد.
 
 i) There are a large number of websites containing content that affects social harmony and stability (websites suspected of attacking the country, attacking leaders, attacking people, and websites with provocative speeches).
 
@@ -32,7 +32,7 @@ k) The content of the website contains VPN, network proxy and other content.
 
 l) Websites that interfere with the normal functioning of all Cloudflare products by technical or non-technical means.
 
-m) Website content that publishes false and untrue news or violates the rights and legitimate interests of others.
+م) محتوای وب سایتی که اخبار نادرست و خلاف واقع را منتشر می کند یا حقوق و منافع مشروع دیگران را نقض می کند.
 
 n) Obtaining website content requires logging in, etc. Websites whose content is not reviewable are not directly viewable.
 
@@ -62,13 +62,13 @@ Users of Windows 8 and above are recommended to use the UTF-8 encoding version.
 
 Note: The ANSI encoding version can be used on all Windows platforms. BUGs in some Windows systems will cause the console to output garbled characters.
 
-Click to download[نسخه ویندوز](https://github.com/badafans/better-cloudflare-ip/releases/latest/download/batch.zip)
+Click to download[Windows version](https://github.com/badafans/better-cloudflare-ip/releases/latest/download/batch.zip)
 
 ## Linux version
 
 Copy and paste the link below completely into the console and for subsequent runs, just type ./cf.sh and press Enter.
 
-Currently tested on Termux, OpenWrt, Ubuntu, Debian, CentOS, MacOS, Raspbian, Armbian, iSH.
+در حال حاضر روی Termux، OpenWrt، Ubuntu، Debian، CentOS، MacOS، Raspbian، Armbian، iSH تست شده است.
 
 ```bash
 curl https://raw.githubusercontent.com/darknessm427/Scanner/master/shell/cis.sh -o cis.sh && chmod +x cis.sh && ./cis.sh
