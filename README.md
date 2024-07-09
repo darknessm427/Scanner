@@ -1,4 +1,4 @@
-# بهتر-cloudflare-ip
+# cloudflare-ip
 
 بهترین Cloudflare Anycast IP را برای محیط شبکه فعلی خود بیابید
 
