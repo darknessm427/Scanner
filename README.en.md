@@ -2,8 +2,6 @@
 
 Find the best Cloudflare Anycast IP for your current network environment
 
-The old version will be discontinued soon, and the next versions will not be updated if there are no obvious bugs!
-
 ## Instructions for use
 
 This project focuses on studying the relationship between packet loss rate and network speed in anycast technology and is for learning purposes only.
