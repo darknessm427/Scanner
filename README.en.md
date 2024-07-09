@@ -44,7 +44,7 @@ This version does not require users to upload any data. The server only provides
 
 ## User-defined data
 
-کاربران می‌توانند بخش‌های آدرس IP ips-v4.txt و ips-v6.txt را سفارشی کنند، در صورت استفاده از به‌روزرسانی داده، داده‌های سفارشی‌شده محلی بازنویسی می‌شوند.
+Users can customize IP address sections of ips-v4.txt and ips-v6.txt, local customized data will be overwritten if data update is used.
 
 Custom content format ips-v4.txt CIDR writing method is x.x.x.x or x.x.x.x/x. The first three digits are extracted by default.
 
