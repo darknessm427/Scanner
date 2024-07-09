@@ -1,4 +1,4 @@
-# 更好的 cloudflare-ip
+# cloudflare-ip
 
 找到最适合您当前网络环境的 Cloudflare Anycast IP
 
@@ -58,7 +58,7 @@ ips-v6.txt自定义内容格式为CIDR写法x:x:x:x:x:x:x:x或x:x:x:x:x:x:x:x/x�
 
 请下载Release版本使用，请勿使用Git Clone下载（出现乱码）
 
-به کاربران ویندوز 7 توصیه می شود از نسخه رمزگذاری ANSI استفاده کنند
+建议Windows 7用户使用ANSI编码版本
 
 Windows 8及以上版本的用户建议使用UTF-8编码版本。
 
