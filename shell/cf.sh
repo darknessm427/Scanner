@@ -462,18 +462,18 @@ clear
 while true
 do
     echo -e "${purple}----------------------------------${rest}"
-    echo -e "${purple}|${cyan}         ÐΛɌ₭ᑎΞ𐒡𐒡 | 𓄂𓆃         ${purple}|${rest}"
+    echo -e "${purple}|${cyan}         ÐΛɌ₭ᑎΞ𐒡𐒡 | 𓄂𓆃          ${purple}|${rest}"
     echo -e "${purple}----------------------------------${rest}"
-    echo -e "${purple}|${yellow}  1. | IPV4 PEARED(TLS)          ${purple}|${rest}"
-    echo -e "${purple}|${yellow}  2. | IPV4 PEARED               ${purple}|${rest}"
-    echo -e "${purple}|${yellow}  3. | IPV6 PEARRED(TLS)         ${purple}|${rest}"
-    echo -e "${purple}|${yellow}  4. | IPV6 PEARRED              ${purple}|${rest}"
-    echo -e "${purple}|${yellow}  5. | Single-IP speed test(TLS) ${purple}|${rest}"
-    echo -e "${purple}|${yellow}  6. | Single-IP speed test      ${purple}|${rest}"
-    echo -e "${purple}|${yellow}  7. | Clear the cache           ${purple}|${rest}"
-    echo -e "${purple}|${yellow}  8. | Clear the cache           ${purple}|${rest}"
+    echo -e "${purple}|${yellow}  1. | IPV4 PEARED(TLS)         ${purple}|${rest}"
+    echo -e "${purple}|${yellow}  2. | IPV4 PEARED              ${purple}|${rest}"
+    echo -e "${purple}|${yellow}  3. | IPV6 PEARRED(TLS)        ${purple}|${rest}"
+    echo -e "${purple}|${yellow}  4. | IPV6 PEARRED             ${purple}|${rest}"
+    echo -e "${purple}|${yellow}  5. | Single-IP speed test(TLS)${purple}|${rest}"
+    echo -e "${purple}|${yellow}  6. | Single-IP speed test     ${purple}|${rest}"
+    echo -e "${purple}|${yellow}  7. | Clear the cache          ${purple}|${rest}"
+    echo -e "${purple}|${yellow}  8. | Clear the cache          ${purple}|${rest}"
     echo -e "${purple}|${red}  0. | EXIT\n                    ${purple}|${rest}"
-	echo -e "${purple}----------------------------------${rest}"
+    echo -e "${purple}----------------------------------${rest}"
 	read -p "select a menu num(Default is 0): " menu
 	if [ -z "$menu" ]
 	then
