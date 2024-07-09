@@ -6,11 +6,11 @@ Find the best Cloudflare Anycast IP for your current network environment
 
 This project focuses on studying the relationship between packet loss rate and network speed in anycast technology and is for learning purposes only.
 
-The instructions are as follows:
+دستورالعمل به شرح زیر است:
 
-الف) آژانس های مربوطه هشدار داده اند که صفحات وب تهدید کننده هستند و وب سایت هایی که اطلاعات غیرقانونی دارند.
+a) Relevant agencies have warned that web pages are threatening and websites that contain illegal information.
 
-ب) وب‌سایت‌های بیمارستانی (بیمارستان‌های سقط جنین، پوست، بیماری‌های مقاربتی و غیره)، وب‌سایت‌هایی که از وزارت بهداشت مدرک تحصیلی نگرفته‌اند.
+b) Hospital websites (hospitals for abortion, dermatology, sexually transmitted diseases, etc.), websites that have not received an educational certificate from the Ministry of Health.
 
 c) The main content of the website includes pornography (video dating, one night stand), illegal (license forgery, sale of imitation guns), feudal superstition, private game servers, game add-ons, online income, sex, beauty tags. and animation tags (very large), gambling (including the sale of gambling tools.), gambling and other content.
 
@@ -36,7 +36,7 @@ m) Website content that publishes false and untrue news or violates the rights a
 
 n) Obtaining website content requires logging in, etc. Websites whose content is not reviewable are not directly viewable.
 
-o) وب سایت هایی که خدمات دانلود فیلم، برنامه های تلویزیونی، نرم افزارها و برنامه ها را ارائه می دهند.
+o) Websites that provide download services for movies, TV shows, software and programs.
 
 ## User data security statement
 
@@ -48,7 +48,7 @@ Users can customize IP address sections of ips-v4.txt and ips-v6.txt, local cust
 
 Custom content format ips-v4.txt CIDR writing method is x.x.x.x or x.x.x.x/x. The first three digits are extracted by default.
 
-قالب محتوای سفارشی ips-v6.txt روش نوشتن CIDR x:x:x:x:x:x:x:x یا x:x:x:x:x:x:x:x/x است، که به طور پیش فرض استخراج می شود :top three
+The ips-v6.txt custom content format is the CIDR writing method x:x:x:x:x:x:x:x or x:x:x:x:x:x:x:x/x, which is The assumption is extracted: top three
 
 More customized gameplay is waiting for users to discover it themselves
 
@@ -56,7 +56,7 @@ More customized gameplay is waiting for users to discover it themselves
 
 Please download the Release version to use, do not use Git Clone to download (garbled characters appear)
 
-Windows 7 users are advised to use the ANSI encoding version
+به کاربران ویندوز 7 توصیه می شود از نسخه رمزگذاری ANSI استفاده کنند
 
 Users of Windows 8 and above are recommended to use the UTF-8 encoding version.
 
@@ -68,7 +68,7 @@ Click to download[Windows version](https://github.com/badafans/better-cloudflare
 
 Copy and paste the link below completely into the console and for subsequent runs, just type ./cf.sh and press Enter.
 
-Currently tested on Termux, OpenWrt, Ubuntu, Debian, CentOS, MacOS, Raspbian, Armbian, iSH.
+در حال حاضر روی Termux، OpenWrt، Ubuntu، Debian، CentOS، MacOS، Raspbian، Armbian، iSH تست شده است.
 
 ```bash
 curl https://raw.githubusercontent.com/darknessm427/Scanner/master/shell/cf.sh -o cf.sh && chmod +x cf.sh && ./cf.sh
