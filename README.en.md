@@ -1,4 +1,4 @@
-# better-cloudflare-ip
+# cloudflare-ip
 
 Find the best Cloudflare Anycast IP for your current network environment
 
