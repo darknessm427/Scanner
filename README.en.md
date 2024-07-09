@@ -40,7 +40,7 @@ o) Websites that provide download services for movies, TV shows, software and pr
 
 ## User data security statement
 
-این نسخه نیازی به آپلود هیچ داده ای از سوی کاربران ندارد. سرور فقط نگهداری و صدور آدرس IP را ارائه می دهد.
+This version does not require users to upload any data. The server only provides IP address maintenance and issuance.
 
 ## User-defined data
 
