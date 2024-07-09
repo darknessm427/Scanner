@@ -14,7 +14,7 @@ b) Hospital websites (hospitals for abortion, dermatology, sexually transmitted 
 
 c) The main content of the website includes pornography (video dating, one night stand), illegal (license forgery, sale of imitation guns), feudal superstition, private game servers, game add-ons, online income, sex, beauty tags. and animation tags (very large), gambling (including the sale of gambling tools.), gambling and other content.
 
-d) There are rogue malicious advertisements on the website (there are video links to illegal content and links to illegal web content).
+d) There are defiant malicious advertisements on the website (there are video links to illegal content and links to illegal web content).
 
 e) Any conduct on the Website that harms or attempts to harm network security, including malicious scanning of websites and network-related software and hardware, illegal intrusion into systems, and acquisition Illegality of data through viruses, trojans, malicious codes, phishing etc. .
 
