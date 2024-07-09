@@ -451,7 +451,7 @@ file=$(echo $url | cut -f 2- -d'/')
 clear
 while true
 do
-	echo "1. IPV4优选(TLS)"
+	echo " 1. | IPV4 PEARED(TLS)  "
 	echo "2. IPV4优选"
 	echo "3. IPV6优选(TLS)"
 	echo "4. IPV6优选"
