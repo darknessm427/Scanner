@@ -462,6 +462,8 @@ clear
 while true
 do
     echo -e "${purple}----------------------------------${rest}"
+    echo -e "${purple}|${blue}    creat = Github: @badafans     ${purple}|${rest}"
+    echo -e "${purple}----------------------------------${rest}"
     echo -e "${purple}|${cyan}         ÐΛɌ₭ᑎΞ𐒡𐒡 | 𓄂𓆃          ${purple}|${rest}"
     echo -e "${purple}----------------------------------${rest}"
     echo -e "${purple}|${yellow}  1. | IPV4 PEARED(TLS)         ${purple}|${rest}"
