@@ -1,6 +1,16 @@
 #!/bin/bash
 # better-cloudflare-ip
 
+#colors
+red='\033[0;31m'
+green='\033[0;32m'
+yellow='\033[0;33m'
+blue='\033[0;34m'
+purple='\033[0;35m'
+cyan='\033[0;36m'
+white='\033[0;37m'
+rest='\033[0m'
+
 function bettercloudflareip(){
 read -p "Please set the desired bandwidth size(The default minimum is 1,unit Mbps):" bandwidth
 read -p "Set the number of RTT test processes(Default is 10,Up to 50):" tasknum
