@@ -4,7 +4,7 @@ Find the best Cloudflare Anycast IP for your current network environment
 
 ## Instructions for use
 
-این پروژه بر روی مطالعه رابطه بین نرخ تلفات بسته و سرعت شبکه در فناوری anycast تمرکز دارد و فقط برای اهداف یادگیری است.
+This project focuses on studying the relationship between packet loss rate and network speed in anycast technology and is for learning purposes only.
 
 The instructions are as follows:
 
@@ -16,7 +16,7 @@ c) The main content of the website includes pornography (video dating, one night
 
 d) There are defiant malicious advertisements on the website (there are video links to illegal content and links to illegal web content).
 
-e) Any conduct on the Website that harms or attempts to harm network security, including malicious scanning of websites and network-related software and hardware, illegal intrusion into systems, and acquisition Illegality of data through viruses, trojans, malicious codes, phishing etc. .
+ه) هر گونه رفتار در وب سایت که به امنیت شبکه آسیب می رساند یا تلاش می کند به امنیت شبکه آسیب برساند، از جمله اسکن مخرب وب سایت ها و نرم افزارها و سخت افزارهای مرتبط با شبکه، نفوذ غیرقانونی به سیستم ها، و کسب غیرقانونی داده ها از طریق ویروس ها، تروجان ها، کدهای مخرب، فیشینگ و غیره. .
 
 f) Websites whose content has copyright risks (videos, novels, music, etc.).
 
@@ -26,7 +26,7 @@ h) The main activity of the website is to provide services such as payment, tran
 
 i) There are a large number of websites containing content that affects social harmony and stability (websites suspected of attacking the country, attacking leaders, attacking people, and websites with provocative speeches).
 
-j) The content of the website contains other content that is not allowed by the relevant national laws and regulations.
+ی) محتوای وب سایت حاوی محتوای دیگری است که توسط قوانین و مقررات ملی مربوطه مجاز نیست.
 
 k) The content of the website contains VPN, network proxy and other content.
 
@@ -34,7 +34,7 @@ l) Websites that interfere with the normal functioning of all Cloudflare product
 
 m) Website content that publishes false and untrue news or violates the rights and legitimate interests of others.
 
-n) Obtaining website content requires logging in, etc. Websites whose content is not reviewable are not directly viewable.
+ن) به دست آوردن محتوای وب سایت نیاز به ورود به سیستم و غیره دارد. وب سایت هایی که محتوای آنها قابل بررسی نیست مستقیماً قابل مشاهده نیستند.
 
 o) Websites that provide download services for movies, TV shows, software and programs.
 
@@ -62,7 +62,7 @@ Users of Windows 8 and above are recommended to use the UTF-8 encoding version.
 
 Note: The ANSI encoding version can be used on all Windows platforms. BUGs in some Windows systems will cause the console to output garbled characters.
 
-Click to download[نسخه ویندوز](https://github.com/badafans/better-cloudflare-ip/releases/latest/download/batch.zip)
+Click to download[Windows version](https://github.com/badafans/better-cloudflare-ip/releases/latest/download/batch.zip)
 
 ## Linux version
 
