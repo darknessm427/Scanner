@@ -2,8 +2,8 @@
 # better-cloudflare-ip
 
 function bettercloudflareip(){
-read -p "请设置期望的带宽大小(默认最小1,单位 Mbps):" bandwidth
-read -p "请设置RTT测试进程数(默认10,最大50):" tasknum
+read -p "Please set the desired bandwidth size(The default minimum is 1,unit Mbps):" bandwidth
+read -p "Set the number of RTT test processes(Default is 10,Up to 50):" tasknum
 if [ -z "$bandwidth" ]
 then
 	bandwidth=1
@@ -18,12 +18,12 @@ then
 fi
 if [ $tasknum -eq 0 ]
 then
-	echo "进程数不能为0,自动设置为默认值"
+	echo "The number of processes cannot be 0,Automatically set to default"
 	tasknum=10
 fi
 if [ $tasknum -gt 50 ]
 then
-	echo "超过最大进程限制,自动设置为最大值"
+	echo "The maximum process limit is exceeded,Automatically set to the maximum value"
 	tasknum=50
 fi
 speed=$[$bandwidth*128*1024]
@@ -31,7 +31,7 @@ starttime=$(date +%s)
 cloudflaretest
 realbandwidth=$[$max/128]
 endtime=$(date +%s)
-echo "从服务器获取详细信息"
+echo "Get the details from the server"
 unset temp
 if [ "$ips" == "ipv4" ]
 then
@@ -58,20 +58,20 @@ else
 	colo=$(grep -w "($(echo ${temp[@]} | sed -e 's/ /\n/g' | grep colo= | cut -f 2- -d'='))" colo.txt | awk -F"-" '{print $1}')
 fi
 clear
-echo "优选IP $anycast"
-echo "公网IP $publicip"
+echo "Preferred IP $anycast"
+echo "Public IP address $publicip"
 if [ $tls == 1 ]
 then
-	echo "支持端口 443 2053 2083 2087 2096 8443"
+	echo "Ports are supported 443 2053 2083 2087 2096 8443"
 else
-	echo "支持端口 80 8080 8880 2052 2082 2086 2095"
+	echo "Ports are supported 80 8080 8880 2052 2082 2086 2095"
 fi
-echo "设置带宽 $bandwidth Mbps"
-echo "实测带宽 $realbandwidth Mbps"
-echo "峰值速度 $max kB/s"
-echo "往返延迟 $avgms 毫秒"
-echo "数据中心 $colo"
-echo "总计用时 $[$endtime-$starttime] 秒"
+echo "Set the bandwidth $bandwidth Mbps"
+echo "Measured bandwidth $realbandwidth Mbps"
+echo "Peak speed $max kB/s"
+echo "Round-trip delays $avgms millisecond"
+echo "Data Centers $colo"
+echo "Total time $[$endtime-$starttime] second"
 }
 
 function rtthttps(){
@@ -328,9 +328,9 @@ do
 			n=$(ls rtt | grep txt | wc -l)
 			if [ $n -ne 0 ]
 			then
-				echo "$(date +'%H:%M:%S') 等待RTT测试结束,剩余进程数 $n"
+				echo "$(date +'%H:%M:%S') Wait for the RTT test to end,The number of processes remaining $n"
 			else
-				echo "$(date +'%H:%M:%S') RTT测试完成"
+				echo "$(date +'%H:%M:%S') RTT testing completed"
 				break
 			fi
 			sleep 1
@@ -338,18 +338,18 @@ do
 		n=$(ls rtt | grep log | wc -l)
 		if [ $n == 0 ]
 		then
-			echo "当前所有IP都存在RTT丢包"
-			echo "继续新的RTT测试"
+			echo "Currently, all IPs have RTT packet loss"
+			echo "Continue with new RTT tests"
 		else
 			cat rtt/*.log > rtt.txt
 			status=0
-			echo "待测速的IP地址"
-			cat rtt.txt | sort | awk '{print $2" 往返延迟 "$1" 毫秒"}'
+			echo "The IP address of the speed test"
+			cat rtt.txt | sort | awk '{print $2" Round-trip delays "$1" millisecond"}'
 			for i in `cat rtt.txt | sort | awk '{print $1"_"$2}'`
 			do
 				avgms=$(echo $i | awk -F_ '{print $1}')
 				ip=$(echo $i | awk -F_ '{print $2}')
-				echo "正在测试 $ip"
+				echo "Testing $ip"
 				if [ $tls == 1 ]
 				then
 					max=$(speedtesthttps $ip)
@@ -361,12 +361,12 @@ do
 					status=1
 					anycast=$ip
 					max=$[$max/1024]
-					echo "$ip 峰值速度 $max kB/s"
+					echo "$ip Peak speed $max kB/s"
 					rm -rf rtt rtt.txt
 					break
 				else
 				max=$[$max/1024]
-				echo "$ip 峰值速度 $max kB/s"
+				echo "$ip Peak speed $max kB/s"
 				fi
 			done
 			if [ $status == 1 ]
@@ -380,11 +380,11 @@ done
 }
 
 function singlehttps(){
-read -p "请输入需要测速的IP: " ip
-read -p "请输入需要测速的端口(默认443): " port
+read -p "Please enter the IP address for which you want to test the speed: " ip
+read -p "Please enter the port where you want to test the speed(Default is 443): " port
 if [ -z "$ip" ]
 then
-	echo "未输入IP"
+	echo "IP is not entered"
 fi
 if [ -z "$port" ]
 then
@@ -395,17 +395,17 @@ speed_download=$(curl --resolve $domain:$port:$ip https://$domain:$port/$file -o
 }
 
 function singlehttp(){
-read -p "请输入需要测速的IP: " ip
-read -p "请输入需要测速的端口(默认80): " port
+read -p "Please enter the IP address for which you want to test the speed: " ip
+read -p "Please enter the port where you want to test the speed(Default is 80): " port
 if [ -z "$ip" ]
 then
-	echo "未输入IP"
+	echo "IP is not entered"
 fi
 if [ -z "$port" ]
 then
 	port=80
 fi
-echo "正在测速 $ip 端口 $port"
+echo "Speed test in progress $ip port $port"
 if [ $(echo $ip | grep : | wc -l) == 0 ]
 then
 	speed_download=$(curl -x $ip:$port http://$domain:$port/$file -o /dev/null --connect-timeout 5 --max-time 15 -w %{speed_download} | awk -F\. '{printf ("%d\n",$1/1024)}')
@@ -416,28 +416,28 @@ fi
 
 function datacheck(){
 clear
-echo "如果这些下面这些文件下载失败,可以手动访问网址下载保存至同级目录"
-echo "https://www.baipiao.eu.org/cloudflare/colo 另存为 colo.txt"
-echo "https://www.baipiao.eu.org/cloudflare/url 另存为 url.txt"
-echo "https://www.baipiao.eu.org/cloudflare/ips-v4 另存为 ips-v4.txt"
-echo "https://www.baipiao.eu.org/cloudflare/ips-v6 另存为 ips-v6.txt"
+echo "If these files below fail to download,You can manually access the URL to download and save to the peer directory"
+echo "https://www.baipiao.eu.org/cloudflare/colo Save As colo.txt"
+echo "https://www.baipiao.eu.org/cloudflare/url Save As url.txt"
+echo "https://www.baipiao.eu.org/cloudflare/ips-v4 Save As ips-v4.txt"
+echo "https://www.baipiao.eu.org/cloudflare/ips-v6 Save As ips-v6.txt"
 while true
 do
 	if [ ! -f "colo.txt" ]
 	then
-		echo "从服务器下载数据中心信息 colo.txt"
+		echo "Download data center information from the server colo.txt"
 		curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/colo -o colo.txt
 	elif [ ! -f "url.txt" ]
 	then
-		echo "从服务器下载测速文件地址 url.txt"
+		echo "Download the address of the speed test file from the server url.txt"
 		curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/url -o url.txt
 	elif [ ! -f "ips-v4.txt" ]
 	then
-		echo "从服务器下载IPV4数据 ips-v4.txt"
+		echo "DOWNLOAD IPV4 DATA FROM THE SERVER ips-v4.txt"
 		curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/ips-v4 -o ips-v4.txt
 	elif [ ! -f "ips-v6.txt" ]
 	then
-		echo "从服务器下载IPV6数据 ips-v6.txt"
+		echo "DOWNLOAD IPV6 DATA FROM THE SERVER ips-v6.txt"
 		curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/ips-v6 -o ips-v6.txt
 	else
 		break
