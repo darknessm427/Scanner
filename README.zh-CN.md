@@ -71,9 +71,9 @@ Windows 8及以上版本的用户建议使用UTF-8编码版本。
 目前已在 Termux、OpenWrt、Ubuntu、Debian、CentOS、MacOS、Raspbian、Armbian、iSH 上进行测试。
 
 ```bash
-curl https://raw.githubusercontent.com/darkness427/Scanner/master/shell/cis.sh -o cis.sh && chmod +x cis.sh && ./cis.sh
+curl https://raw.githubusercontent.com/darknessm427/Scanner/master/shell/cis.sh -o cis.sh && chmod +x cis.sh && ./cis.sh
 ```
 
 ## 参考声明
 
-对于 Cloudflare ASN<https://bgp.he.net/AS13335>，Cloudflare IP 范围来自<https://www.cloudflare.com/zh-cn/ips/>
+对于 Cloudflare ASN<https://bgp.he.net/AS13335>，Cloudflare IP 范围来自[HTTPS://呜呜呜.cloud flare.com/这-才能/IPS/](https://www.cloudflare.com/zh-cn/ips/)
