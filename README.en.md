@@ -6,7 +6,7 @@ Find the best Cloudflare Anycast IP for your current network environment
 
 This project focuses on studying the relationship between packet loss rate and network speed in anycast technology and is for learning purposes only.
 
-دستورالعمل به شرح زیر است:
+The instructions are as follows:
 
 a) Relevant agencies have warned that web pages are threatening and websites that contain illegal information.
 
@@ -14,7 +14,7 @@ b) Hospital websites (hospitals for abortion, dermatology, sexually transmitted 
 
 c) The main content of the website includes pornography (video dating, one night stand), illegal (license forgery, sale of imitation guns), feudal superstition, private game servers, game add-ons, online income, sex, beauty tags. and animation tags (very large), gambling (including the sale of gambling tools.), gambling and other content.
 
-d) There are rogue malicious advertisements on the website (there are video links to illegal content and links to illegal web content).
+d) There are defiant malicious advertisements on the website (there are video links to illegal content and links to illegal web content).
 
 e) Any conduct on the Website that harms or attempts to harm network security, including malicious scanning of websites and network-related software and hardware, illegal intrusion into systems, and acquisition Illegality of data through viruses, trojans, malicious codes, phishing etc. .
 
@@ -56,7 +56,7 @@ More customized gameplay is waiting for users to discover it themselves
 
 Please download the Release version to use, do not use Git Clone to download (garbled characters appear)
 
-به کاربران ویندوز 7 توصیه می شود از نسخه رمزگذاری ANSI استفاده کنند
+Windows 7 users are advised to use the ANSI encoding version
 
 Users of Windows 8 and above are recommended to use the UTF-8 encoding version.
 
@@ -68,7 +68,7 @@ Click to download[Windows version](https://github.com/badafans/better-cloudflare
 
 Copy and paste the link below completely into the console and for subsequent runs, just type ./cf.sh and press Enter.
 
-در حال حاضر روی Termux، OpenWrt، Ubuntu، Debian، CentOS، MacOS، Raspbian، Armbian، iSH تست شده است.
+Currently tested on Termux, OpenWrt, Ubuntu, Debian, CentOS, MacOS, Raspbian, Armbian, iSH.
 
 ```bash
 curl https://raw.githubusercontent.com/darknessm427/Scanner/master/shell/cf.sh -o cf.sh && chmod +x cf.sh && ./cf.sh
