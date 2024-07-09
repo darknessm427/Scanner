@@ -11,8 +11,8 @@ white='\033[0;37m'
 rest='\033[0m'
 
 function bettercloudflareip(){
-read -p "${yellow}Please set the desired bandwidth size${green}(The default minimum is 1,unit Mbps)${yellow}:${rest}" bandwidth
-read -p "${yellow}Set the number of RTT test processes${green}(Default is 10,Up to 50)${yellow}:${rest}" tasknum
+read -p "Please set the desired bandwidth size(The default minimum is 1,unit Mbps):" bandwidth
+read -p "Set the number of RTT test processes(Default is 10,Up to 50):" tasknum
 if [ -z "$bandwidth" ]
 then
 	bandwidth=1
