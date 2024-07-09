@@ -2,8 +2,6 @@
 
 找到最适合您当前网络环境的 Cloudflare Anycast IP
 
-旧版本即将停产，后续版本如无明显bug将不会更新！
-
 ## 使用说明
 
 本项目重点研究任播技术中丢包率与网络速度的关系，仅供学习之用。
@@ -78,4 +76,4 @@ curl https://raw.githubusercontent.com/badafans/better-cloudflare-ip/master/shel
 
 ## 参考声明
 
-对于 Cloudflare ASN[HTTPS://BGP.和.net/as13335](https://bgp.he.net/AS13335)，Cloudflare IP 范围来自<https://www.cloudflare.com/zh-cn/ips/>
+对于 Cloudflare ASN[HTTPS://BGP.和.net/as13335](https://bgp.he.net/AS13335)，Cloudflare IP 范围来自[HTTPS://呜呜呜.cloud flare.com/这-才能/IPS/](https://www.cloudflare.com/zh-cn/ips/)
