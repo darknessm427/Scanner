@@ -2,7 +2,7 @@
 
 Find the best Cloudflare Anycast IP for your current network environment
 
-نسخه قدیمی به زودی سرویس نمی دهد و نسخه های بعدی در صورت عدم وجود باگ آشکار به روز نمی شوند!
+The old version will be discontinued soon, and the next versions will not be updated if there are no obvious bugs!
 
 ## Instructions for use
 
@@ -24,7 +24,7 @@ f) Websites whose content has copyright risks (videos, novels, music, etc.).
 
 g) The website contains the sale of drugs and health care products, but does not obtain the necessary qualifications, or seriously exaggerates the facts about the effectiveness of the drugs.
 
-h) The main activity of the website is to provide services such as payment, transaction platform, guarantee and representation of foreign financial management (speculation, speculation, gold speculation) to illegal websites.
+h) The main activity of the website is to provide services such as payment, transaction platform, guarantee and agency of foreign financial management (speculation, speculation, gold speculation) to illegal websites.
 
 i) There are a large number of websites containing content that affects social harmony and stability (websites suspected of attacking the country, attacking leaders, attacking people, and websites with provocative speeches).
 
@@ -48,7 +48,7 @@ This version does not require users to upload any data. The server only provides
 
 Users can customize IP address sections of ips-v4.txt and ips-v6.txt, local customized data will be overwritten if data update is used.
 
-قالب محتوای سفارشی ips-v4.txt روش نوشتن CIDR x.x.x.x یا x.x.x.x/x است. سه رقم اول به طور پیش‌فرض استخراج می‌شوند.
+Custom content format ips-v4.txt CIDR writing method is x.x.x.x or x.x.x.x/x. The first three digits are extracted by default.
 
 The ips-v6.txt custom content format is the CIDR writing method x:x:x:x:x:x:x:x or x:x:x:x:x:x:x:x/x, which is The assumption is extracted: top three
 
