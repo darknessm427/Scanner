@@ -2,7 +2,7 @@
 
 Find the best Cloudflare Anycast IP for your current network environment
 
-## دستورالعمل استفاده
+## Instructions for use
 
 This project focuses on studying the relationship between packet loss rate and network speed in anycast technology and is for learning purposes only.
 
@@ -46,7 +46,7 @@ This version does not require users to upload any data. The server only provides
 
 Users can customize IP address sections of ips-v4.txt and ips-v6.txt, local customized data will be overwritten if data update is used.
 
-قالب محتوای سفارشی ips-v4.txt روش نوشتن CIDR x.x.x.x یا x.x.x.x/x است. سه رقم اول به طور پیش‌فرض استخراج می‌شوند.
+Custom content format ips-v4.txt CIDR writing method is x.x.x.x or x.x.x.x/x. The first three digits are extracted by default.
 
 The ips-v6.txt custom content format is the CIDR writing method x:x:x:x:x:x:x:x or x:x:x:x:x:x:x:x/x, which is The assumption is extracted: top three
 
@@ -62,7 +62,7 @@ Users of Windows 8 and above are recommended to use the UTF-8 encoding version.
 
 Note: The ANSI encoding version can be used on all Windows platforms. BUGs in some Windows systems will cause the console to output garbled characters.
 
-Click to download[Windows version](https://github.com/badafans/better-cloudflare-ip/releases/latest/download/batch.zip)
+Click to download[نسخه ویندوز](https://github.com/badafans/better-cloudflare-ip/releases/latest/download/batch.zip)
 
 ## Linux version
 
@@ -71,7 +71,7 @@ Copy and paste the link below completely into the console and for subsequent run
 Currently tested on Termux, OpenWrt, Ubuntu, Debian, CentOS, MacOS, Raspbian, Armbian, iSH.
 
 ```bash
-curl https://raw.githubusercontent.com/darkness427/Scanner/master/shell/cis.sh -o cis.sh && chmod +x cis.sh && ./cis.sh
+curl https://raw.githubusercontent.com/darknessm427/Scanner/master/shell/cis.sh -o cis.sh && chmod +x cis.sh && ./cis.sh
 ```
 
 ## Reference statement
