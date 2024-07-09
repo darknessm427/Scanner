@@ -533,7 +533,7 @@ do
 	then
 		rm -rf rtt rtt.txt log.txt speed.txt
 		clear
-		echo "The cache has been emptied"
+		echo "缓存已经清空"
 	fi
 	if [ $menu == 8 ]
 	then
