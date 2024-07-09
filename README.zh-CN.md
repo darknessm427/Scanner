@@ -42,7 +42,7 @@ o) 提供电影、电视节目、软件和程序下载服务的网站。
 
 该版本不需要用户上传任何数据。服务器仅提供IP地址的维护和发放。
 
-## داده های تعریف شده توسط کاربر
+## 用户定义数据
 
 用户可以自定义ips-v4.txt和ips-v6.txt的IP地址部分，如果使用数据更新，本地自定义数据将被覆盖。
 
@@ -76,4 +76,4 @@ curl https://raw.githubusercontent.com/darknessm427/Scanner/master/shell/cis.sh 
 
 ## 参考声明
 
-对于 Cloudflare ASN[HTTPS://BGP.和.net/as13335](https://bgp.he.net/AS13335)，Cloudflare IP 范围来自<https://www.cloudflare.com/zh-cn/ips/>
+对于 Cloudflare ASN[HTTPS://BGP.和.net/as13335](https://bgp.he.net/AS13335)，Cloudflare IP 范围来自[HTTPS://呜呜呜.cloud flare.com/这-才能/IPS/](https://www.cloudflare.com/zh-cn/ips/)
