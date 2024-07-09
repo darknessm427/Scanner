@@ -2,7 +2,7 @@
 
 Find the best Cloudflare Anycast IP for your current network environment
 
-## Instructions for use
+## دستورالعمل استفاده
 
 This project focuses on studying the relationship between packet loss rate and network speed in anycast technology and is for learning purposes only.
 
@@ -14,7 +14,7 @@ b) Hospital websites (hospitals for abortion, dermatology, sexually transmitted 
 
 c) The main content of the website includes pornography (video dating, one night stand), illegal (license forgery, sale of imitation guns), feudal superstition, private game servers, game add-ons, online income, sex, beauty tags. and animation tags (very large), gambling (including the sale of gambling tools.), gambling and other content.
 
-d) There are rogue malicious advertisements on the website (there are video links to illegal content and links to illegal web content).
+d) There are defiant malicious advertisements on the website (there are video links to illegal content and links to illegal web content).
 
 e) Any conduct on the Website that harms or attempts to harm network security, including malicious scanning of websites and network-related software and hardware, illegal intrusion into systems, and acquisition Illegality of data through viruses, trojans, malicious codes, phishing etc. .
 
@@ -22,7 +22,7 @@ f) Websites whose content has copyright risks (videos, novels, music, etc.).
 
 g) The website contains the sale of drugs and health care products, but does not obtain the necessary qualifications, or seriously exaggerates the facts about the effectiveness of the drugs.
 
-h) The main activity of the website is to provide services such as payment, transaction platform, guarantee and representation of foreign financial management (speculation, speculation, gold speculation) to illegal websites.
+h) The main activity of the website is to provide services such as payment, transaction platform, guarantee and agency of foreign financial management (speculation, speculation, gold speculation) to illegal websites.
 
 i) There are a large number of websites containing content that affects social harmony and stability (websites suspected of attacking the country, attacking leaders, attacking people, and websites with provocative speeches).
 
@@ -46,7 +46,7 @@ This version does not require users to upload any data. The server only provides
 
 Users can customize IP address sections of ips-v4.txt and ips-v6.txt, local customized data will be overwritten if data update is used.
 
-Custom content format ips-v4.txt CIDR writing method is x.x.x.x or x.x.x.x/x. The first three digits are extracted by default.
+قالب محتوای سفارشی ips-v4.txt روش نوشتن CIDR x.x.x.x یا x.x.x.x/x است. سه رقم اول به طور پیش‌فرض استخراج می‌شوند.
 
 The ips-v6.txt custom content format is the CIDR writing method x:x:x:x:x:x:x:x or x:x:x:x:x:x:x:x/x, which is The assumption is extracted: top three
 
@@ -71,7 +71,7 @@ Copy and paste the link below completely into the console and for subsequent run
 Currently tested on Termux, OpenWrt, Ubuntu, Debian, CentOS, MacOS, Raspbian, Armbian, iSH.
 
 ```bash
-curl https://raw.githubusercontent.com/badafans/better-cloudflare-ip/master/shell/cf.sh -o cf.sh && chmod +x cf.sh && ./cf.sh
+curl https://raw.githubusercontent.com/darkness427/Scanner/master/shell/cis.sh -o cis.sh && chmod +x cis.sh && ./cis.sh
 ```
 
 ## Reference statement
