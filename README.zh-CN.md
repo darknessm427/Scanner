@@ -40,13 +40,13 @@ o) 提供电影、电视节目、软件和程序下载服务的网站。
 
 ## 用户数据安全声明
 
-این نسخه نیازی به آپلود هیچ داده ای از سوی کاربران ندارد. سرور فقط نگهداری و صدور آدرس IP را ارائه می دهد.
+该版本不需要用户上传任何数据。服务器仅提供IP地址的维护和发放。
 
 ## 用户定义数据
 
 用户可以自定义ips-v4.txt和ips-v6.txt的IP地址部分，如果使用数据更新，本地自定义数据将被覆盖。
 
-自定义内容格式 ips-v4.txt CIDR 写入方式为 x.x.x.x 或 x.x.x.x/x。默认情况下提取前三位数字。
+قالب محتوای سفارشی ips-v4.txt روش نوشتن CIDR x.x.x.x یا x.x.x.x/x است. سه رقم اول به طور پیش‌فرض استخراج می‌شوند.
 
 ips-v6.txt自定义内容格式为CIDR写法x:x:x:x:x:x:x:x或x:x:x:x:x:x:x:x/x，即提取假设：前三名
 
@@ -76,4 +76,4 @@ curl https://raw.githubusercontent.com/darknessm427/Scanner/master/shell/cf.sh -
 
 ## 参考声明
 
-对于 Cloudflare ASN[HTTPS://BGP.和.net/as13335](https://bgp.he.net/AS13335)，Cloudflare IP 范围来自<https://www.cloudflare.com/zh-cn/ips/>
+对于 Cloudflare ASN[HTTPS://BGP.和.net/as13335](https://bgp.he.net/AS13335)，Cloudflare IP 范围来自[HTTPS://呜呜呜.cloud flare.com/这-才能/IPS/](https://www.cloudflare.com/zh-cn/ips/)
