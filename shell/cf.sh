@@ -1,6 +1,5 @@
 #!/bin/bash
 # better-cloudflare-ip
-
 #colors
 red='\033[0;31m'
 green='\033[0;32m'
@@ -10,6 +9,7 @@ purple='\033[0;35m'
 cyan='\033[0;36m'
 white='\033[0;37m'
 rest='\033[0m'
+
 
 function bettercloudflareip(){
 read -p "Please set the desired bandwidth size(The default minimum is 1,unit Mbps):" bandwidth
@@ -461,16 +461,20 @@ file=$(echo $url | cut -f 2- -d'/')
 clear
 while true
 do
-	echo " 1. | IPV4 PEARED(TLS)  "
-	echo "2. IPV4优选"
-	echo "3. IPV6优选(TLS)"
-	echo "4. IPV6优选"
-	echo "5. 单IP测速(TLS)"
-	echo "6. 单IP测速"
-	echo "7. 清空缓存"
-	echo "8. 更新数据"
-	echo -e "0. 退出\n"
-	read -p "请选择菜单(默认0): " menu
+        echo -e "${purple}----------------------------------${rest}"
+        echo -e "${purple}|         ÐΛɌ₭ᑎΞ𐒡𐒡 | 𓄂𓆃         |${rest}"
+        echo -e "${purple}----------------------------------${rest}"
+        echo "${purple}|  1. | IPV4 PEARED(TLS)          |${rest}"
+	echo "${purple}|  2. | IPV4 PEARED               |${rest}"
+	echo "${purple}|  3. | IPV6 PEARRED(TLS)         |${rest}"
+	echo "${purple}|  4. | IPV6 PEARRED              |${rest}"
+	echo "${purple}|  5. | Single-IP speed test(TLS) |${rest}"
+	echo "${purple}|  6. | Single-IP speed test      |${rest}"
+	echo "${purple}|  7. | Clear the cache           |${rest}"
+	echo "${purple}|  8. | Clear the cache           |${rest}"
+        echo -e "${purple}|  0. | EXIT\n                    |${rest}"
+	echo -e "${purple}----------------------------------${rest}"
+	read -p "select a menu num(Default is 0): " menu
 	if [ -z "$menu" ]
 	then
 		menu=0
@@ -478,7 +482,7 @@ do
 	if [ $menu == 0 ]
 	then
 		clear
-		echo "退出成功"
+		echo "The exit was successful"
 		break
 	fi
 	if [ $menu == 1 ]
@@ -517,13 +521,13 @@ do
 	then
 		singlehttps
 		clear
-		echo "$ip 平均速度 $speed_download kB/s"
+		echo "$ip Average $speed_download kB/s"
 	fi
 	if [ $menu == 6 ]
 	then
 		singlehttp
 		clear
-		echo "$ip 平均速度 $speed_download kB/s"
+		echo "$ip Average $speed_download kB/s"
 	fi
 	if [ $menu == 7 ]
 	then
